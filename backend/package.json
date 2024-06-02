@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "antd": "^5.17.4",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "formik": "^2.4.6",
+    "mongoose": "^7.6.3",
+    "react-router-dom": "^6.23.1"
+  }
+}
