@@ -6,7 +6,7 @@ import axios from 'axios';
 const MentorForm = () => {
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      await axios.post('http://localhost:5000/api/mentor/create', values);
+      await axios.post('https://mentor-student-management-ptyd.onrender.com/api/mentor/create', values);
       notification.success({ message: 'Mentor created successfully' });
       resetForm();
     } catch (error) {

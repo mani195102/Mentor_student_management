@@ -12,8 +12,8 @@ const ChangeMentor = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const mentorRes = await axios.get('http://localhost:5000/api/mentor/all');
-        const studentRes = await axios.get('http://localhost:5000/api/student/all');
+        const mentorRes = await axios.get('https://mentor-student-management-ptyd.onrender.com/api/mentor/all');
+        const studentRes = await axios.get('https://mentor-student-management-ptyd.onrender.com/api/student/all');
         setMentors(mentorRes.data);
         setStudents(studentRes.data);
       } catch (error) {
@@ -25,7 +25,7 @@ const ChangeMentor = () => {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      await axios.post('http://localhost:5000/api/student/change-mentor', values);
+      await axios.post('https://mentor-student-management-ptyd.onrender.com/api/student/change-mentor', values);
       notification.success({ message: 'Mentor changed successfully' });
       resetForm();
     } catch (error) {

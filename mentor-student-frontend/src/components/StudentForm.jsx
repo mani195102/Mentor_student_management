@@ -6,7 +6,7 @@ import axios from 'axios';
 const StudentForm = () => {
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      await axios.post('http://localhost:5000/api/student/create', values);
+      await axios.post('https://mentor-student-management-ptyd.onrender.com/api/student/create', values);
       notification.success({ message: 'Student created successfully' });
       resetForm();
     } catch (error) {

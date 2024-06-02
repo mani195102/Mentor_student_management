@@ -11,7 +11,7 @@ const MentorStudents = () => {
   useEffect(() => {
     const fetchMentors = async () => {
       try {
-        const mentorRes = await axios.get('http://localhost:5000/api/mentor/all');
+        const mentorRes = await axios.get('https://mentor-student-management-ptyd.onrender.com/api/mentor/all');
         setMentors(mentorRes.data);
       } catch (error) {
         notification.error({ message: 'Failed to fetch mentors' });
@@ -22,7 +22,7 @@ const MentorStudents = () => {
 
   const fetchStudents = async (mentorId) => {
     try {
-      const studentRes = await axios.get(`http://localhost:5000/api/mentor/${mentorId}/students`);
+      const studentRes = await axios.get(`https://mentor-student-management-ptyd.onrender.com/api/mentor/${mentorId}/students`);
       setStudents(studentRes.data);
     } catch (error) {
       notification.error({ message: 'Failed to fetch students' });
