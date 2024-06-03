@@ -40,7 +40,7 @@ const ChangeMentor = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-      <div style={{ width: '90%', maxWidth: '40%' }}>
+      <div style={{ width: '90%', maxWidth: '70%' }}>
         <Formik initialValues={initialValues} enableReinitialize onSubmit={handleSubmit}>
           {({ setFieldValue, values }) => (
             <Form>

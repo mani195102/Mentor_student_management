@@ -31,7 +31,7 @@ const MentorStudents = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-    <div style={{ width: '90%', maxWidth: '50%' }}>
+    <div style={{ width: '90%', maxWidth: '70%' }}>
       <Row gutter={[16, 16]}>
         <Col xs={24} sm={24} md={24}>
           <Select
